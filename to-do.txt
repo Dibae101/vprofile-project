@@ -1,0 +1,28 @@
+sudo apt install virtualbox
+
+wget https://releases.hashicorp.com/vagrant/2.2.14/
+vagrant_2.2.14_x86_64.deb
+
+
+
+sudo apt install ./vagrant_2.2.14_x86_64.deb
+
+vagrant -v
+
+vagrant up
+
+The host-manager plugin is required:
+vagrant plugin install vagrant-hostmanager
+
+
+Make sure the IP address doesn't collide with your device IP, 
+if your IP address is 192.168.1.11, on the vagrant script make it 192.168.3.1
+
+
+If user error:
+ vagrant destroy -f
+ 
+ and,
+ vagrant up
+
+
